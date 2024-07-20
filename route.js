@@ -3,7 +3,7 @@ const Referees = require("./models");
 const router = express.Router();
 
 router.get("/", async (req, res)=>{
-
+res.send("hello")
 })
 
 router.post("/", async(req, res)=>{
