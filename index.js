@@ -10,5 +10,9 @@ app.use("/api/refer", router)
 app.use(express.urlencoded({ extended: false }));
 
 app.listen(PORT, ()=>{
-console.log("server created")
+console.log("server created",process.env.DB_NAME,
+    process.env.DB_USER,
+    process.env.DB_PASS,
+    process.env.DB_HOST)
+
 })
